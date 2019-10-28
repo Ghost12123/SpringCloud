@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="configserver" />
+        <module name="ekserver" />
+        <module name="EurekaServer" />
+        <module name="feignhystrixinvoker" />
+        <module name="firstekserviceprovider" />
+        <module name="hystrixdashboard" />
+        <module name="productdataservice" />
+        <module name="productviewservicefeign" />
+        <module name="productviewserviceribbon" />
+        <module name="turbine" />
+        <module name="zull" />
+        <module name="zuul" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="childMavenProject" target="1.8" />
+      <module name="first-ek-server" target="1.8" />
+      <module name="firstcloudrestclient" target="1.8" />
+      <module name="firstekserviceinvoker" target="1.8" />
+      <module name="spring-cloud-registry" target="1.8" />
+      <module name="zuulinvoker" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

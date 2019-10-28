@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: first-cloud-provider
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:8761/eureka/, http://${eureka.instance.hostname}:8762/eureka/
+

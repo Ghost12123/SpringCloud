@@ -1,0 +1,21 @@
+
+server:
+  port: 9001
+spring:
+  application:
+    name: first-cloud-invoker
+
+feign.hystrix.enabled: true
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:8761/eureka/, http://${eureka.instance.hostname}:8762/eureka/
+
+zuul:
+  routes:
+    api-a:
+      path: /api-view/**
+      serviceId: FIRST-CLOUD-PROVIDER
